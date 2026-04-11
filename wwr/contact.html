@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+      content="This is a website about contacting our Rafting Company for bookings, questions, and finding about more information on our Rafting Company">
+    <meta name="author" content="Ayanda Sena Dlamini">
+    <link rel="stylesheet" href="styles/rafting.css">
+    <title> Contact Us-Rafting Company</title>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo2.jpg" alt="Rafting Company logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contact-grid">
+            <section class="contact-info">
+                <h2>white Water Rafting Company</h2>
+                <p>123 Main River Street><br>
+                    Manzini, Eswatini<br>
+                    +268 7886 2615<br>
+                    info@whitewater.com</p>
+
+                <div class="map-container">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d228446.65908797574!2d31.359344538281253!3d-26.536874149173993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1775937024545!5m2!1sen!2s"
+                      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+
+            <section class="contact-form">
+                <form action="#" method="post">
+                    <div class="form-item">
+                        <label for="user_name">Name</label>
+                        <input type="text" id="user_name" name="user_name" placeholder="Your Name"
+                          required>
+                    </div>
+
+                    <div class="form-item">
+                        <label for="user_email">Email</label>
+                        <input type="email" id="user_email" name="user_email"
+                          placeholder="email@example.com" required>
+                    </div>
+
+                    <fieldset>
+                        <legend>Message Purpose</legend>
+                        <label><input type="radio" name="purpose" value="general">General
+                            Inquiry</label>
+                        <label><input type="radio" name="purpose" value="reservation">Reservation
+                            Question</label>
+                        <label><input type="radio" name="purpose" value="suggestion">Website
+                            Suggestion</label>
+                    </fieldset>
+
+                    <div class="form-item">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4"
+                          placeholder="Type here..."></textarea>
+                    </div>
+
+                    <div class="form-item checkbox">
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                        <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                    </div>
+
+                    <button type="submit">Get in Touch!</button>
+                </form>
+            </section>
+        </div>
+
+        <section class="employees">
+            <h2>We Are Here to Serve You</h2>
+            <div class="employees-grid">
+                <figure>
+                    <img src="images/Employee12.jpg" alt="Manager">
+                    <figcaption>CEO-Tsebo Maaboi</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Employee2.jpg" alt="Lead Guide">
+                    <figcaption>Lead Guide-Daisy Thwala</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Employee3.jpg" alt="Safety Expert">
+                    <figcaption>Safety Officer-Ayanda Dlamini</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>©2026 White Water Rafting Co.💗Ayanda Sena Dlamini💗 </p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="images/facebook-logo_4406235.jpg" alt="facebook Icon">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram_174855.jpg" alt="Instagram Icon">
+            </a>
+            <a href="https://linkedin.com">
+                <img src="images/social_15707753.jpg" alt="Linkedin Icon">
+            </a>
+
+        </nav>
+    </footer>
+</body>
+
+</html>
