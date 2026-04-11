@@ -19,10 +19,11 @@ header,
 main,
 footer {
     width: 840px;
+    max-width: 100%;
+    /* Ensures it doesn't overflow on mobile */
     margin: 0 auto;
 }
 
-h1,
 h2 {
     font-family: var(--heading-font);
     color: white;
@@ -39,43 +40,71 @@ article {
     padding: 8px;
 }
 
-.socialmedia a {
-    text-decoration: none;
+.socialmedia img {
+    width: 30px;
+    /* Icons are likely too big without this */
+    height: auto;
 }
 
 h1 {
-    position: absolute;
-    top: 10px;
     width: 100%;
     padding: 20px;
     text-align: center;
-    background-color: #141e63;
+    background-color: var(--accent1-color);
     color: #ffffff;
+    /* Remove position: absolute; */
 }
 
-.hero article img {
-    float: right;
-    width: 125px;
+/* Container for the whole Hero area */
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 40px;
+    /* Space before the History section */
 }
 
+/* The blue title bar */
+.hero-title-box h1 {
+    position: static;
+    /* Removes the floating effect */
+    width: 100%;
+    padding: 30px;
+    background-color: var(--accent1-color);
+    color: #ffffff;
+    margin: 0;
+}
+
+/* The content area below the title */
 .hero-content {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    /* Text takes 2 parts, Image takes 1 */
+    align-items: center;
     gap: 20px;
-    top: 450px;
-    color: #ffffff;
+    background-color: #9da1d2;
+    /* Light blue background */
+    padding: 20px;
+    /* Remove position: absolute and top: 450px */
+}
+
+/* Styling the mission statement text */
+.hero-content p {
+    color: var(--accent1-color);
+    font-size: 1.2rem;
+    line-height: 1.6;
     margin: 0;
-    position: absolute;
-    padding: 10px;
 }
 
-.hero h1 {
-    position: absolute;
-    top: 20px;
-}
-
-.hero article {
-    position: absolute;
+/* Keeping the happy client photo contained */
+.hero-image-wrapper img {
+    width: 100%;
+    /* Fills its grid column */
+    max-width: 200px;
+    /* Prevents it from getting too huge */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 header {
@@ -100,20 +129,52 @@ nav {
     gap: 25px;
 }
 
+nav ul {
+    background-color: aliceblue;
+    border: black;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+
+}
+
+nav li:not(:last-child)::after {
+    content: "|";
+    margin-left: 15px;
+    color: var(--accent1-color);
+    font-weight: normal;
+}
+
 .adventure-grid {
     display: flex;
+    flex-wrap: wrap;
+    /* Allows items to drop to the next row if needed */
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
+    padding: 20px 0;
 }
 
 .adventure-grid figure {
-    flex: 1;
+    flex: 1 1 150px;
+    /* Grow, shrink, and start at 150px wide */
     margin: 0;
+    text-align: center;
+    /* Centers the caption text under the image */
 }
 
 .adventure-grid img {
     width: 100%;
-    height: auto
+    height: auto;
+    display: block;
+    /* Removes the bottom margin gap in images */
+    border-radius: 5px;
+    /* Optional: gives a nice polished look */
+}
+
+.adventure-grid figcaption {
+    margin-top: 8px;
+    font-style: italic;
+    font-size: 0.9rem;
 }
 
 .history-container h2 {
