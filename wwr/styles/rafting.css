@@ -88,6 +88,13 @@ h1 {
     /* Remove position: absolute and top: 450px */
 }
 
+.hero img {
+    position: absolute;
+    align-items: end;
+    width: 100%;
+    height: auto;
+}
+
 /* Styling the mission statement text */
 .hero-content p {
     color: var(--accent1-color);
@@ -185,4 +192,47 @@ nav li:not(:last-child)::after {
 header img {
     width: 100px;
     height: auto;
+}
+
+.trip-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.trip-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.trip-card {
+    background-color: f4f4f4;
+    padding: 10px;
+    text-align: center;
+}
+
+.trips-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: sans-serif;
+}
+
+.trips-table th,
+.trips-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.trips-table th {
+    background-color: #333;
+    color: white;
+}
+
+.trips-table tr:nth-child(even) {
+    background-color: #f2f2f2;
 }
