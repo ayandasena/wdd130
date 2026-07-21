@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #055a05;
-    --secondary-color: #f4a261;
+    --primary-color: #0e0255;
+    --secondary-color: #ffffff;
     --accent1-color: rgba(1, 1, 90, 0.692);
     --accent2-color: #e9c46a;
     --heading-font: "Times New Roman", "Georgia", serif;
@@ -75,6 +75,13 @@ h1 {
     opacity: 0.7;
     background-color: rgba(1, 1, 90, 0.085);
     color: #fff;
+}
+
+.hero article {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    position: absolute;
+
 }
 
 .hero article img {
