@@ -32,6 +32,7 @@ footer {
     margin: 0 auto;
 }
 
+h1,
 h2 {
     font-family: var(--heading-font);
     color: white;
@@ -80,9 +81,17 @@ h1 {
 .hero article {
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    position: top;
-    top: 20;
+    position: absolute;
+    top: 380px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    padding: 15px;
 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px
 }
 
 .hero article img {
@@ -90,5 +99,9 @@ h1 {
     width: 140px;
     margin-left: 15px;
     border: 1px solid;
-    top: 120px
+    height: auto;
+}
+
+.socialmedia a {
+    text-decoration: none;
 }
